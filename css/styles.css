@@ -2,7 +2,7 @@
   --background-light-color: #e5e5e5;
   --accent-blue-color: #2196f3;
   --text-link-color: #212121;
-  --logo-black: #000000;
+  --logo-black-color: #000000;
   --hero-white-color: #fff;
   --background-hero-color: #2f303a; /*тимчасово*/
   --main-body-color: #757575;
@@ -43,7 +43,7 @@ body {
   letter-spacing: 0.02em;
 }
 .header-logo {
-  color: var(--logo-black);
+  color: var(--logo-black-color);
 }
 .header-logo span {
   color: var(--accent-blue-color);
