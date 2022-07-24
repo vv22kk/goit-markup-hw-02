@@ -6,9 +6,13 @@
   --hero-white-color: #fff;
   --background-hero-color: #2f303a; /*тимчасово*/
   --main-body-color: #757575;
+  --btn-black-color: #212121;
+  --btn-back-color: #2196f3;
+  --btn-white-color: #fff;
+  --header-link-color: #212121;
 }
 body {
-  background-color: var(--primary-white-color);
+  background-color: var(--background-light-color);
   font-family: 'Roboto', sans-serif;
 }
 .list {
@@ -44,20 +48,18 @@ body {
 .header-logo span {
   color: var(--accent-blue-color);
 }
-.header-list {
-  color: var(--text-link-color);
+.header-link {
+  color: var(--header-link-color);
 }
-.header-link:hover,
-.header-link:focus {
+.accent:hover,
+.accent:focus {
   color: var(--accent-blue-color);
 }
-.header-link .link {
+.header-mail,
+.header-tel {
   color: var(--main-body-color);
 }
-.header-link .link:hover,
-.header-link .link:focus {
-  color: var(--accent-blue-color);
-}
+
 /* --------------------------hero ----------------------------*/
 .hero-title {
   font-weight: 900;
@@ -76,12 +78,13 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--hero-white-color);
-  background-color: var(--accent-blue-color);
+  color: var(--btn-white-color);
+  background-color: var(--btn-back-color);
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--accent-blue-color);
+  background-color: var(--btn-back-color);
+  color: var(--btn-white-color);
 }
 
 /* -------------------------benefits------------------------*/
@@ -119,7 +122,6 @@ body {
   color: var(--text-link-color);
 }
 .personal-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18px;
   letter-spacing: 0.03em;
@@ -136,7 +138,6 @@ body {
   color: var(--accent-blue-color);
 }
 .contact {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -153,9 +154,23 @@ body {
   color: var(--text-link-color);
 }
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-body-color);
+}
+
+.portfolio-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--btn-first-color);
+}
+.portfolio-button:hover,
+.portfolio-button:hover {
+  background-color: var(--btn-back-color);
+  color: var(--btn-white-color);
 }
