@@ -24,6 +24,20 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-link-color);
+}
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 .header-logo {
   color: var(--logo-black);
 }
@@ -31,10 +45,6 @@ body {
   color: var(--accent-blue-color);
 }
 .header-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--text-link-color);
 }
 .header-link:hover,
@@ -42,10 +52,6 @@ body {
   color: var(--accent-blue-color);
 }
 .header-link .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.02em;
   color: var(--main-body-color);
 }
 .header-link .link:hover,
@@ -104,15 +110,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-body-color);
-}
-.inform-title,
-.personal-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-link-color);
 }
 .personal-name {
   font-weight: 500;
