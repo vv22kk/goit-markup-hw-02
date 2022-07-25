@@ -1,5 +1,5 @@
 :root {
-  --background-light-color: #e5e5e5;
+  --background-white-color: #fff;
   --accent-blue-color: #2196f3;
   --text-link-color: #212121;
   --logo-black-color: #000000;
@@ -10,10 +10,18 @@
   --btn-back-color: #2196f3;
   --btn-white-color: #fff;
   --header-link-color: #212121;
+  --personal-back-color: #f5f4fa;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --footer-text-white: #fff;
+  --portfolio-btn-background-color: #f5f4fa;
+  --portfolio-btn-txt-color: #212121;
 }
 body {
-  background-color: var(--background-light-color);
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--main-body-color);
+  font-size: 14px;
+  background-color: var(--background-white-color);
 }
 .list {
   list-style: none;
@@ -21,29 +29,37 @@ body {
 .link {
   text-decoration: none;
 }
+.title-delete {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* -----------------------  header----------------------------- */
 .logo {
+  font-family: 'Releway', sans-serif;
+  color: black;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--text-link-color);
 }
 .header {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.header-logo {
-  color: var(--logo-black-color);
 }
 .header-logo span {
   color: var(--accent-blue-color);
@@ -55,12 +71,18 @@ body {
 .accent:focus {
   color: var(--accent-blue-color);
 }
+.current {
+  color: var(--accent-blue-color);
+}
 .header-mail,
 .header-tel {
   color: var(--main-body-color);
 }
 
 /* --------------------------hero ----------------------------*/
+.hero {
+  background-color: var(--background-hero-color); /*тимчасово*/
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -69,7 +91,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-white-color);
-  background: var(--background-hero-color); /*тимчасово*/
 }
 .hero-button {
   font-family: inherit;
@@ -88,46 +109,30 @@ body {
 }
 
 /* -------------------------benefits------------------------*/
-.benefits-title,
-.title-portfolio {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 .benefits-pre-text {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   color: var(--text-link-color);
+  text-transform: uppercase;
 }
 .benefits-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-body-color);
+}
+/* -------------------------------------personal-------------- */
+.personal {
+  background-color: var(--personal-back-color);
 }
 .personal-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   color: var(--text-link-color);
 }
 .personal-text {
   font-size: 16px;
   line-height: 1.18px;
-  letter-spacing: 0.03em;
-  color: var(--main-body-color);
 }
-/* ---------------------footer-------------------- */
+/* --------------------footer---------------- */
 .footer {
   background-color: var(--background-hero-color); /* тимчасово */
 }
@@ -138,12 +143,15 @@ body {
   color: var(--accent-blue-color);
 }
 .contact {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--hero-white-color);
 }
-
+.contact-mail,
+.contact-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-link {
+  color: var(--footer-text-white);
+}
 /*---------------- Portfolio -------------------*/
 .portfolio-title {
   font-family: inherit;
@@ -156,7 +164,6 @@ body {
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--main-body-color);
 }
 
@@ -166,11 +173,15 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: var(--btn-first-color);
+  background-color: var(--portfolio-btn-background-color);
+  color: var(--portfolio-btn-txt-color);
 }
 .portfolio-button:hover,
 .portfolio-button:hover {
   background-color: var(--btn-back-color);
+  color: var(--btn-white-color);
+}
+.portfolio-current {
+  background-color: var(--accent-blue-color);
   color: var(--btn-white-color);
 }
