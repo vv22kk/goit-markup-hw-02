@@ -15,6 +15,7 @@
   --footer-text-white: #fff;
   --portfolio-btn-background-color: #f5f4fa;
   --portfolio-btn-txt-color: #212121;
+  --btn-back-hover-color: #188ce8;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -29,7 +30,7 @@ body {
 .link {
   text-decoration: none;
 }
-.title-delete {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -43,8 +44,8 @@ body {
 }
 /* -----------------------  header----------------------------- */
 .logo {
-  font-family: 'Releway', sans-serif;
-  color: black;
+  font-family: 'Raleway', sans-serif;
+  color: var(--logo-black-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -101,15 +102,18 @@ body {
   letter-spacing: 0.06em;
   color: var(--btn-white-color);
   background-color: var(--btn-back-color);
+  cursor: pointer;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--btn-back-color);
-  color: var(--btn-white-color);
+  background-color: var(--btn-back-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* -------------------------benefits------------------------*/
 .benefits-pre-text {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   color: var(--text-link-color);
@@ -152,9 +156,12 @@ body {
 .contact-link {
   color: var(--footer-text-white);
 }
+.btn-accent:hover,
+.btn-accent:focus {
+  color: var(--accent-blue-color);
+}
 /*---------------- Portfolio -------------------*/
 .portfolio-title {
-  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -175,6 +182,8 @@ body {
   line-height: 1.62;
   background-color: var(--portfolio-btn-background-color);
   color: var(--portfolio-btn-txt-color);
+  cursor: pointer;
+  letter-spacing: 0.03em;
 }
 .portfolio-button:hover,
 .portfolio-button:hover {
